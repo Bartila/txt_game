@@ -1,0 +1,116 @@
+.main-window {
+    width: 500px;
+    position: relative;
+}
+
+.battle-info {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 50px; /* Max distance between player and enemy */
+    margin-top: 20px;
+    margin-bottom: 20px; /* Spacing between battle info and buttons */
+}
+
+.overlay-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Overlay width */
+    height: 100%; /* Overlay height */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    z-index: 9999; /* Set a higher z-index to ensure it appears above other content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    /* Additional styles for your overlay content */
+}
+
+.player-info, .enemy-info {
+    width: 150px; /* Adjust width as needed */
+    border: 3px solid #ccc;
+    padding: 10px;
+}
+
+.player-info{
+    border-color: green;
+    background: yellowgreen;
+}
+
+.enemy-info{
+    border-color: #6e0000;
+    background: #dd2b2b;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin : 10px;/* Adjust the height as needed */
+}
+
+.scrollable-container {
+    margin-top: 0.5em;
+    width: 400px; /* Define your container width */
+    height: 200px; /* Define your container height */
+    overflow: auto; /* Enable scrolling for overflow content */
+    border: 3px solid #ccc; /* Optional border styling */
+}
+
+.content {
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    /* Optional styling for the content inside the scrollable container */
+}
+
+.paralized{
+    background-color: gold;
+    color: black;
+}
+.charging{
+    background: #b40000;
+    color: whitesmoke;
+}
+
+.victory-box {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 40%;
+    width: 80%; /* Overlay width */
+    height: 20%; /* Overlay height */
+    background-color: rgba(158, 255, 0, 0.75); /* Semi-transparent black background */
+    border: 3px solid rgba(0, 128, 0, 0.75);
+    border-radius: 5px;
+    z-index: 9999; /* Set a higher z-index to ensure it appears above other content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(63, 31, 96, 0.75);
+    font-size: 24px;
+    /* Additional styles for your overlay content */
+}
+
+.deafeted-box {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 40%;
+    width: 80%; /* Overlay width */
+    height: 20%; /* Overlay height */
+    background-color: rgba(255, 0, 0, 0.75); /* Semi-transparent black background */
+    border: 3px solid rgba(128, 0, 0, 0.75);
+    border-radius: 5px;
+    z-index: 9999; /* Set a higher z-index to ensure it appears above other content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(216, 228, 255, 0.75);
+    font-size: 24px;
+    /* Additional styles for your overlay content */
+}

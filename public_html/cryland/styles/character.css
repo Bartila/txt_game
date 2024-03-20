@@ -1,0 +1,33 @@
+.main-window {
+    width: 500px;
+}
+
+#add-button {
+    min-width: 35px;
+    padding: 5px 5px;
+    margin: 5px;
+}
+
+.character-info {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1px; /* Max distance between player and enemy */
+    margin-top: 20px;
+    margin-bottom: 20px; /* Spacing between battle info and buttons */
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 10px;
+}
+
+.character-info p {
+    text-align: right;
+    padding: 5px 10px;
+    margin: 10px;
+    margin-bottom: 35px;
+}
+
